@@ -88,20 +88,13 @@
 
     function consultar (value) {
 
-        idcadastro = document.getElementById('consult');
+        idcadastro = document.getElementById('consult').value;
 
-        anuncios.forEach( valorAtual => {
+        console.log(typeof anuncios[0])
 
-            console.log(valorAtual.id);
+        let objeto = anuncios[idcadastro];
 
-            let test = valorAtual.id;
-
-            if (test == idcadastro) {
-                console.log(valorAtual);
-            }
-        })
-
+        console.log('Objeto', objeto);
         
-
-
+    
     }
